@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Responsive Slide Menu</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <span id="open-slide-menu">
+            <a href="#" onclick="openSlideMenu()">
+                <svg width="40" height="40">
+                    <path d="M0,15 35,15" stroke="#fff" stroke-width="5" />
+                    <path d="M0,25 35,25" stroke="#fff" stroke-width="5" />
+                    <path d="M0,35 35,35" stroke="#fff" stroke-width="5" />
+                </svg>
+            </a>
+        </span>
+
+        <ul>
+            <li><a href="#" class="current">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Popular</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="slide-menu" id="slide-navbar">
+        <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+        <a href="#">Home</a>
+        <a href="#">Popular</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <div id="container">
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ad tempore dolor quis quaerat saepe officiis
+            excepturi ea facilis reiciendis?</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
